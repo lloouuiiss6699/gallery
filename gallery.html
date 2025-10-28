@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Square Virtual Gallery</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-iframe-component/dist/aframe-iframe-component.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -14,25 +15,25 @@
       <!-- Floor -->
       <a-plane rotation="-90 0 0" width="20" height="20" color="#777"></a-plane>
 
-      <!-- Four walls with artwork -->
+      <!-- Four walls with iframe of your live site -->
       <!-- Back Wall -->
       <a-plane position="0 2 -5" rotation="0 0 0" width="10" height="4"
-               material="shader: flat; src: https://autoinsertion.me/?seed=wall1">
+               iframe="src: https://autoinsertion.me/?seed=wall1">
       </a-plane>
 
       <!-- Front Wall -->
       <a-plane position="0 2 5" rotation="0 180 0" width="10" height="4"
-               material="shader: flat; src: https://autoinsertion.me/?seed=wall2">
+               iframe="src: https://autoinsertion.me/?seed=wall2">
       </a-plane>
 
       <!-- Left Wall -->
       <a-plane position="-5 2 0" rotation="0 90 0" width="10" height="4"
-               material="shader: flat; src: https://autoinsertion.me/?seed=wall3">
+               iframe="src: https://autoinsertion.me/?seed=wall3">
       </a-plane>
 
       <!-- Right Wall -->
       <a-plane position="5 2 0" rotation="0 -90 0" width="10" height="4"
-               material="shader: flat; src: https://autoinsertion.me/?seed=wall4">
+               iframe="src: https://autoinsertion.me/?seed=wall4">
       </a-plane>
 
       <!-- Ceiling -->
